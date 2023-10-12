@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     function movePlayer(amount) {
-        var currentPosition = parseInt(player.style.left);
+        var currentPosition = parseInt(player.style.left) || 0;
         player.style.left = currentPosition + amount + "px";
         checkCollision();
     }
