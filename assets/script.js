@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
         player.style.left = currentPosition + amount + "px";
         checkCollision();
     }
-    function movePlayer(amount) {
+    function checkCollision(amount) {
         var playerRect = player.getBoundingClientRect();
         var enemyRect = enemy.getBoundingClientRect();
 
